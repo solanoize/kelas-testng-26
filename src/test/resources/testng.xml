@@ -5,7 +5,7 @@
     <test name="App Test">
         <classes>
             <class name="com.juaracoding.testng.ClassTest01" />
-            <!-- <class name="com.juaracoding.testng.ClassTest02" /> -->
+            <class name="com.juaracoding.testng.ClassTest02" />
         </classes>
     </test>
 
