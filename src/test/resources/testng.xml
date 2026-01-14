@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="eCommerce Test Suite">
+    <parameter name="username" value="cangcimen"></parameter>
+    <parameter name="password" value="2026mypassword"></parameter>
 
     <test name="Test E2E Web">
-        <parameter name="username" value="cangcimen"></parameter>
-        <parameter name="password" value="2026mypassword"></parameter>
+        <parameter name="a" value="Hello"></parameter>
+
         <classes>
             <class name="com.juaracoding.testng.web.WebLoginTest" />
             <class name="com.juaracoding.testng.web.WebInventoryTest" />
