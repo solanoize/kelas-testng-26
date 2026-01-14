@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Belajar TestNG">
+<suite name="eCommerce Test Suite">
 
-    <test name="App Test">
+    <test name="Test E2E Web">
+        <parameter name="username" value="cangcimen"></parameter>
+        <parameter name="password" value="2026mypassword"></parameter>
         <classes>
-            <class name="com.juaracoding.testng.ClassTest01" />
-            <class name="com.juaracoding.testng.ClassTest02" />
+            <class name="com.juaracoding.testng.web.WebLoginTest" />
+            <class name="com.juaracoding.testng.web.WebInventoryTest" />
         </classes>
     </test>
 
+    <test name="Test E2E Mobile">
+        <classes>
+            <class name="com.juaracoding.testng.mobile.MobileLoginTest" />
+            <class name="com.juaracoding.testng.mobile.MobileInventoryTest" />
+        </classes>
+    </test>
+
+    <test name="Integration Test API">
+        <classes>
+            <class name="com.juaracoding.testng.api.AuthenticationLoginTest" />
+            <class name="com.juaracoding.testng.api.TokenJWTTest" />
+        </classes>
+    </test>
 </suite>
